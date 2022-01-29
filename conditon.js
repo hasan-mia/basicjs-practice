@@ -1,6 +1,7 @@
 var number = [90, 79, 65, 54, 50, 33, 32, 88];
 var student = ['Nahid', 'Chuya', 'Jarin', 'Sumaiya', 'Romana', 'Sachin', 'Dipanta', 'Barsha'];
-//// if..else with for loop
+//// ==========if..else with for loop================//
+////=================================================//
 // for (var i = 0; i < student.length; i++) {
 //     if (number[i] >= 80 && number[i] <= 100) {
 //         console.log(student[i] + ': A+')
@@ -21,7 +22,9 @@ var student = ['Nahid', 'Chuya', 'Jarin', 'Sumaiya', 'Romana', 'Sachin', 'Dipant
 
 // }
 
-// // if else with while Loop
+
+//// ==========if else with while Loop================//
+////=================================================//
 // var i = 0;
 // while (i < student.length) {
 //     if (number[i] >= 80 && number[i] <= 100) {
