@@ -129,3 +129,39 @@ var foodQuantity = 10; // Give quantity you want, if quantity is more than 10, y
 var discountParcent = 10 / 100; // How much give you off as percnet ( this 10% example)
 var result = foodDelivery(foodName, foodQuantity, foodPrice, discountParcent);
 console.log(result);
+
+// ========Celcious To Fahrenheit==================//
+//=================================================//
+// °F = (9/5 × °C) + 32
+function celsiusToFahrenheit(celcious) {
+    var ferhenheite = 32 + (celcious * 1.8);
+    return ferhenheite;
+}
+var temperature = 20;
+var result = celsiusToFahrenheit(temperature);
+console.log(result);
+
+// ===========Fahrenheit To Celcious===============//
+//=================================================//
+// °C = (°F - 32) × 5/9
+function FahrenheitTocelsius(ferhenheite) {
+    var celcious = (ferhenheite - 32) * (5 / 9);
+    return Math.floor(celcious); // Math.ceil 
+}
+var temperature = 55;
+var result = FahrenheitTocelsius(temperature);
+console.log(result);
+// ===========Simple Interest======-===============//
+//=================================================//
+//I = pnr
+
+function interest(money, year, parcnet) {
+    var profite = money * year * parcnet;
+    var total = money + profite;
+    return total;
+}
+var principle = 100; // Principle Money
+var time = 5; // Time of loan
+var rate = 10 / 100; // Rate of lone per year;
+var result = interest(principle, time, rate);
+console.log(result);
