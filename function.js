@@ -67,16 +67,30 @@ var result = grade(inputName, inputNumber);
 console.log(result);
 
 
-// ==========Get Yeas isA lepyear or NOt===========//
+// ==========Get Year is A lepyear or Not==========//
 //=================================================//
 function leapYear(year) {
     if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
         return decision = 'Yes, ' + year + ' is a leapyear';
     } else {
-        return decision = 'Yes, ' + year + ' is not a leapyear';
+        return decision = 'No, ' + year + ' is not a leapyear';
     }
 
 }
-var input = 2016;
+var input = 2200;
 var result = leapYear(input);
+console.log(result);
+
+// ========Get Factorial Number of Any Number======//
+//=================================================//
+function getFactorial(number) {
+    let factorial = 1
+    for (let i = 1; i <= number; i++) {
+        factorial = factorial * i;
+    }
+    return factorial;
+
+}
+var input = 3;
+var result = getFactorial(input);
 console.log(result);
