@@ -165,3 +165,22 @@ var time = 5; // Time of loan
 var rate = 10 / 100; // Rate of lone per year;
 var result = interest(principle, time, rate);
 console.log(result);
+
+// ===========Count Vowel From Sentence============//
+//=================================================//
+function countVowel(sentence) {
+    let count = 0
+    let vowels = []
+    for (let i = 0; i < sentence.length; i++) {
+        letter = sentence[i].toLowerCase();
+        if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') {
+            count++
+            vowels.push(letter);
+        }
+    }
+    return count + '\n' + 'Vowels are: ' + vowels;
+}
+
+const string = 'I am lazy person of the world'
+const result = countVowel(string);
+console.log(result);
