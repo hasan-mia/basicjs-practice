@@ -40,3 +40,14 @@ for (let i = 0; i < array.length; i++) {
 for (const item of array) {
     console.log(item);
 }
+
+/* ১০. তোমাকে যদি বলা হয়। একটা array এর মধ্যে ৮০ 
+এর চাইতে বড় সংখ্যা থাকলে সেগুলাকে console log করে দেখাতে সেটা কি তুমি পারবে? 
+তাহলে তুমি সেই কোড করে ফেলো 
+ */
+const x = [50, 60, 70, 80, 90]
+for (let i = 0; i < x.length; i++) {
+    if (x[i] > 80) {
+        console.log(x[i])
+    }
+}
