@@ -181,3 +181,83 @@ function positiveNumber(number) {
 const number = [-4, -3, -2, -1, 0, 1, 2, 3, 4, 5, -6]
 const result = positiveNumber(number);
 console.log(result);
+
+// ===========Mular Price============//
+//===================================//
+function mularDam(kg) {
+    if (typeof kg != 'number') {
+        return 'Please enter a valid quantity';
+    }
+    if (kg <= 0) {
+        return 'Please enter a valid number';
+    }
+
+    let price = 0;
+    if (kg <= 2) {
+        price = kg * 30
+    } else {
+        price = kg * 25
+    }
+    return price;
+}
+const kg = 3;
+const result = mularDam(kg);
+console.log(result)
+
+// ===========Electricity Bill============//
+//=======================================//
+function electricityBill(unit) {
+    if (typeof unit != 'number') {
+        return 'Please input correct number';
+    }
+    let total = 0;
+    if (unit <= 100 && unit > 0) {
+        total = unit * 5;
+    } else if (unit > 100 && unit <= 200) {
+        firstTotal = 100 * 5;
+        secondTotal = (unit - 100) * 6;
+        total = firstTotal + secondTotal;
+
+    } else if (unit > 200) {
+        firstTotal = 100 * 5;
+        secondTotal = 100 * 6;
+        thirdTotal = (unit - 200) * 8;
+        total = firstTotal + secondTotal + thirdTotal;
+    } else {
+        return 'Your input is wrong'
+    }
+    return total;
+}
+const unit = -200;
+const result = electricityBill(unit);
+console.log(result);
+
+// ===========Largest Number=============//
+//=======================================//
+function largestNumber(number) {
+    let largest = number[0];
+    for (let i = 0; i < number.length; i++) {
+        if (number[i] > largest) {
+            largest = number[i];
+        }
+    }
+    return largest;
+}
+const input = [5, 4, 6, 7, 8]
+const result = largestNumber(input);
+console.log(result);
+
+// ===========Smallest Number=============//
+//=======================================//
+function smallestNumber(number) {
+    let smallest = number[0];
+    for (let i = 0; i < number.length; i++) {
+        if (number[i] < smallest) {
+            smallest = number[i];
+        }
+    }
+    return smallest;
+}
+const num = [5, 4, 6, 7, 8]
+const result = smallestNumber(num);
+console.log(result);
