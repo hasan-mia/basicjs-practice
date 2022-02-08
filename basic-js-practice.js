@@ -137,7 +137,7 @@ function bestFriend(name) {
         }
 
     }
-    return myfriend;
+    return myfriend + '\nTotal Charecter ' + bigfriend;
 }
 
 const name = ['Soya', 'Jarin', 'Nahid', 'Sumaiya akter', 'Hasan rafi']
@@ -147,7 +147,7 @@ console.log(result);
 //==== OR ====
 
 function bestFriend(name) {
-    let bigfriend = '';
+    let bigfriend = name[0];
     for (let i = 0; i < name.length; i++) {
         if (name[i].length > bigfriend.length) {
             bigfriend = name[i]
@@ -260,4 +260,47 @@ function smallestNumber(number) {
 }
 const num = [5, 4, 6, 7, 8]
 const result = smallestNumber(num);
+console.log(result);
+
+/* Create a function that takes a number as an argument,
+increments the number by +1 and returns the result */
+function addition(num) {
+    if (num < 0) {
+        for (let i = 0; i > num; i--) {
+            num = num + 1;
+            return num;
+        }
+    } else {
+        for (let i = 0; i <= num; i++) {
+            num = num + 1;
+            return num;
+        }
+    }
+}
+const num = 0;
+const result = addition(num);
+console.log(result);
+
+/* Given an n-sided regular polygon n, 
+return the total sum of internal angles (in degrees).
+ */
+function sumPolygon(n) {
+    res = (n - 2) * 180;
+    return res;
+}
+const result = sumPolygon(3);
+console.log(result);
+
+/* Mubashir created an infinite loop! Help him by 
+fixing the code in the code tab to pass this challenge.
+Look at the examples below to get an idea of what the function should do. */
+
+function printArray(number) {
+    var newArray = [];
+    for (var i = 1; i <= number; i++) {
+        newArray.push(i);
+    }
+    return newArray;
+}
+const result = printArray(6);
 console.log(result);
